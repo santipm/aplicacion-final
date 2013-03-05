@@ -4,6 +4,8 @@ es:
       not_found: "no se encontró"
       already_confirmed: "ya fue confirmado"
       not_locked: "no estaba bloqueado"
+      not_saved: Error al guardar 
+      not_found_in_database: "El usuario no existe"
 
   devise:
     sessions:
@@ -38,3 +40,7 @@ es:
       confirmation_instructions: 'Instrucciones de confirmación'
       reset_password_instructions: 'Instrucciones de recuperación de contraseña'
       unlock_instructions: 'Instrucciones para desbloquear'
+    failure:
+      user:
+        invalid: "Contraseña incorrecta"
+        not_found_in_database: "Usuario no existe"
