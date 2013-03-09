@@ -44,3 +44,4 @@ es:
       user:
         invalid: "Contraseña incorrecta"
         not_found_in_database: "Usuario no existe"
+        unauthenticated: "Por favor, Inicie sesión"

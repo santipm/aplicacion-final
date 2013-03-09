@@ -1,0 +1,45 @@
+<h2>Editar Perfil <%= current_user.name.capitalize %></h2>
+
+<%= form_for @perfil, :url=>{:action=>:update}, :html=>{:method=>:put} do |f| %>
+ <% if @perfil.errors.any? %>
+ <div class="alert alert-error">
+      <a class="close" data-dismiss="alert">&#215;</a>
+ 
+      <h2><%= pluralize(@perfil.errors.count, "error") %></h2>
+
+      <ul>
+      <% @perfil.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<p><%= f.label :nombre %><br />
+<%= f.text_field :nombre %></p>
+
+  <div><%= f.label :apellidos %><br />
+  <%= f.text_field :apellidos %></div>
+
+  <div><%= f.label :ciudad %><br />
+  <%= f.text_field :ciudad %></div>
+
+  <div><%= f.label :sexo %><br />
+  <%= f.radio_button :sexo, "Hombre" %> Hombre
+  <%= f.radio_button :sexo, "Mujer" %> Mujer
+   </div>
+
+  <div><%= f.label :fecha_nacimiento, "Fecha de nacimiento" %><br />
+  <%= f.date_select :fecha_nacimiento,
+  :start_year => 1930,
+  :end_year => Time.now.year,
+  :include_blank =>true,
+  :order => [:day, :month, :year] %></div>
+
+
+
+  <div><%= f.submit "Actualizar" %></div>
+<% end %>
+
+
+<%= link_to "Atrás", :back %>

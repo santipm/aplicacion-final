@@ -1,8 +1,16 @@
-<h3>Users</h3>
-<ul class="users">
-  <% @users.each do |user| %>
-    <li>
-      <%= link_to user.name, user %> Registrado <%= user.created_at.to_date %>
-    </li>
-  <% end %>
-</ul>
+<h3>Configuración Cuenta</h3>
+
+<div class="row">
+	<div class="span3">
+		<ul class="nav nav-list">
+			<li class="nav-header">Menú Usuario</li>
+    		<li>
+    		<%= link_to 'Información Básica', edit_user_registration_path %>
+    		</li>
+    		<li>
+    		<%= link_to 'Editar Perfil', perfil_path(current_user)%>
+    		</li>
+    	</ul>
+	</div>
+</div>
+  

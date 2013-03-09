@@ -4,12 +4,14 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one:
- id: 4
- email: "rails@prueba.com"
- encrypted_password: <%= BCrypt::Password.create('12345678') %>
- name: "rails_curso"
-# column: value
+one: 
+ id: 3
+ user_id: 4
+ nombre: "SantiagoPonce"
+ apellidos: "Moreno"
+ sexo: "Hombre"
+ fecha_nacimiento: 1981-04-01
+ ciudad: "Malaga"
 #
 
 #  column: value
