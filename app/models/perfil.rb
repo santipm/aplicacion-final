@@ -6,7 +6,7 @@ class Perfil < ActiveRecord::Base
     CAMPOS = %w(nombre apellidos sexo ciudad)
 	SEXO = ["Hombre","Mujer"]
 
-	validates :nombre,:apellidos,:sexo,:fecha_nacimiento,:ciudad, :presence=>true
+	
 
 	#Tamaños
 	validates :nombre,:apellidos, :length =>
