@@ -9,7 +9,7 @@ class Perfil < ActiveRecord::Base
 	
 
 	#Tamaños
-	validates :nombre,:apellidos, :length =>
+	validates :nombre,:apellidos,:ciudad, :length =>
 	{
 		:maximum=> 30,
 		:minimum=> 6,

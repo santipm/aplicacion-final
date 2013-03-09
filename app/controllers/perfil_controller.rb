@@ -11,13 +11,14 @@ before_filter :authenticate_user!
 
   def update
 
-  	@usuario = User.find(params[:id])
-    @perfil = @usuario.perfil
-
+  	@usuario = User.find(current_user)
+    @perfil = Perfil.new(params[:perfil])
+    @usuario.perfil ||= @usuario.build_perfil
 
     respond_to do |format|
-      if current_user.create_perfil(params[:perfil])
-        format.html {redirect_to @usuario, notice: "Datos Actualizados" }
+      if @perfil.save
+          @usuario.perfil.update_attributes(params[:perfil])
+          format.html {redirect_to @usuario, notice: "Datos Actualizados" }
       else
         format.html { render action: "show"}
 
