@@ -17,3 +17,5 @@ end
 gem 'jquery-rails'
 gem "bootstrap-sass", ">= 2.3.0.0"
 gem "devise", ">= 2.2.3"
+gem 'gravatar_image_tag'
+gem 'will_paginate', '~> 3.0.0'

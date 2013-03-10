@@ -1,4 +1,26 @@
-<h3>Inicio</h3>
+<h3>Usuarios Registrados</h3>
 <% @users.each do |user| %>
-  <p>Usuario: <%=link_to user.name, user %></p>
+	<div class="content">
+		<div class="row">
+			<!-- Insertar avatar -->
+			<div class="span1">
+				<%=link_to gravatar_image_tag(user.email, :alt=>user.name),user_path(user)  %>
+			</div>
+			<!-- Fín avatar -->
+			<!-- Nombre y descripción usuario -->
+			<div class="span">
+				<strong><%= user.name.capitalize %></strong>
+				<p>
+					<small>
+						<%= ciudad_usuario(user) %>
+					</small>
+				</p>
+			</div>
+			<!-- Fín descripción-->
+		</div>
+	</div>
+
 <% end %>
+
+
+<%= will_paginate @users %>

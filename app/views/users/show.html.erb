@@ -1,3 +1,28 @@
-<h3>Usuario</h3>
-<p>Usuario: <%= @user.name %></p>
-<p>Email: <%= @user.email if @user.email %></p>
+<% if existe_usuario(@user) %>
+<h3>Perfil Público <%= nombre_perfil(@user) %></h3>
+
+		<div class="row">
+  			<div class="span4">
+  			<%= gravatar_image_tag(@user.email, :alt => @user.name,:class=>"thumbnail",:gravatar => { :size => 300 })  %>
+  			</div>
+  			<div class="span5 ">
+  				<h3><%= nombre_perfil(@user) %></h3>
+  				<p>
+  					<small>
+  						<p>Ciudad: <%= ciudad_perfil(@user) %> </p>
+  						<p>Sexo: <%= sexo_perfil(@user) %> </p>
+  					</small>
+  				
+  			</div>
+  		</div>
+  		<div class="row">
+  			<div class="span4">
+
+  			</div>
+
+  		</div>
+<% else %>
+	
+	Lo sentimos nombre de usuario no válido 
+
+<% end %>

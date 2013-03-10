@@ -4,12 +4,122 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one:
- id: 4
- email: "rails@prueba.com"
+uno:
+ id: 1
+ email: "sponce@hotmail.es"
  encrypted_password: <%= BCrypt::Password.create('12345678') %>
- name: "rails_curso"
-# column: value
-#
+ name: "santiago"
 
-#  column: value
+dos:
+ id: 2
+ email: "juan@prueba.com"
+ encrypted_password: <%= BCrypt::Password.create('12345678') %>
+ name: "juan"
+
+tres:
+ id: 3
+ email: "inma@prueba.com"
+ encrypted_password: <%= BCrypt::Password.create('12345678') %>
+ name: "inma"
+
+cuatro:
+ id: 4
+ email: "josefa@prueba.com"
+ encrypted_password: <%= BCrypt::Password.create('12345678') %>
+ name: "josefa"
+
+cinco:
+ id: 5
+ email: "pepi@prueba.com"
+ encrypted_password: <%= BCrypt::Password.create('12345678') %>
+ name: "pepi"
+
+seis:
+ id: 6
+ email: "anamaria@prueba.com"
+ encrypted_password: <%= BCrypt::Password.create('12345678') %>
+ name: "anamaria"
+
+siete:
+ id: 7
+ email: "jesus@prueba.com"
+ encrypted_password: <%= BCrypt::Password.create('12345678') %>
+ name: "jesus"
+
+ocho:
+ id: 8
+ email: "lidia@prueba.com"
+ encrypted_password: <%= BCrypt::Password.create('12345678') %>
+ name: "lidia"
+
+nueve:
+ id: 9
+ email: "marta@prueba.com"
+ encrypted_password: <%= BCrypt::Password.create('12345678') %>
+ name: "marta"
+
+diez:
+ id: 10
+ email: "carlitos@prueba.com"
+ encrypted_password: <%= BCrypt::Password.create('12345678') %>
+ name: "carlitos"
+
+once:
+ id: 11
+ email: "elena@prueba.com"
+ encrypted_password: <%= BCrypt::Password.create('12345678') %>
+ name: "elena"
+
+doce:
+ id: 12
+ email: "karl@prueba.com"
+ encrypted_password: <%= BCrypt::Password.create('12345678') %>
+ name: "karl"
+
+trece:
+ id: 13
+ email: "boris@prueba.com"
+ encrypted_password: <%= BCrypt::Password.create('12345678') %>
+ name: "boris"
+
+catorce:
+ id: 14
+ email: "arantxa@prueba.com"
+ encrypted_password: <%= BCrypt::Password.create('12345678') %>
+ name: "arantxa"
+
+quince:
+ id: 15
+ email: "hugo@prueba.com"
+ encrypted_password: <%= BCrypt::Password.create('12345678') %>
+ name: "hugo"
+
+diecisesis:
+ id: 16
+ email: "paola@prueba.com"
+ encrypted_password: <%= BCrypt::Password.create('12345678') %>
+ name: "paola"
+
+diecisiete:
+ id: 17
+ email: "salvador@prueba.com"
+ encrypted_password: <%= BCrypt::Password.create('12345678') %>
+ name: "salvador"
+
+dieciocho:
+ id: 18
+ email: "bego@prueba.com"
+ encrypted_password: <%= BCrypt::Password.create('12345678') %>
+ name: "bego"
+
+diecinueve:
+ id: 19
+ email: "paco@prueba.com"
+ encrypted_password: <%= BCrypt::Password.create('12345678') %>
+ name: "paco"
+
+veinte:
+ id: 20
+ email: "fernando@prueba.com"
+ encrypted_password: <%= BCrypt::Password.create('12345678') %>
+ name: "fernando"

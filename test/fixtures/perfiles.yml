@@ -4,14 +4,109 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: 
- id: 3
- user_id: 4
- nombre: "SantiagoPonce"
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+uno: 
+ id: 1
+ user_id: 1
+ nombre: "Santiago Ponce"
  apellidos: "Moreno"
  sexo: "Hombre"
  fecha_nacimiento: 1981-04-01
  ciudad: "Malaga"
 #
+dos: 
+ id: 2
+ user_id: 2
+ nombre: "Juan"
+ apellidos: "Pelirrojo"
+ sexo: "Hombre"
+ fecha_nacimiento: 1981-03-01
+ ciudad: "Jaén"
 
-#  column: value
+tres: 
+ id: 3
+ user_id: 3
+ nombre: "Inma"
+ apellidos: "Fons"
+ sexo: "Mujer"
+ fecha_nacimiento: 1971-04-01
+ ciudad: "Madrid"
+
+cuatro: 
+ id: 4
+ user_id: 4
+ nombre: "Josefa"
+ apellidos: "Gómez"
+ sexo: "Mujer"
+ fecha_nacimiento: 1931-04-01
+ ciudad: "Almeria"
+
+cinco: 
+ id: 5
+ user_id: 5
+ nombre: "Pepi"
+ apellidos: "Garcia"
+ sexo: "Mujer"
+ fecha_nacimiento: 1981-04-01
+ ciudad: "Munich"
+
+seis: 
+ id: 6
+ user_id: 6
+ nombre: "Ani"
+ apellidos: "Carriedo"
+ sexo: "Mujer"
+ fecha_nacimiento: 1961-04-01
+ ciudad: "Campanillas"
+
+siete: 
+ id: 7
+ user_id: 7
+ nombre: "Jesus"
+ apellidos: "Magoneo"
+ sexo: "Hombre"
+ fecha_nacimiento: 1981-04-01
+ ciudad: "Alahurín de la Torre"
+
+ocho: 
+ id: 8
+ user_id: 8
+ nombre: "Lidia"
+ apellidos: "Benitéz"
+ sexo: "Mujer"
+ fecha_nacimiento: 1989-04-01
+ ciudad: "Huelva"
+
+nueve: 
+ id: 9
+ user_id: 9
+ nombre: "Marta"
+ apellidos: "Sánchez"
+ sexo: "Hombre"
+ fecha_nacimiento: 1981-04-01
+ ciudad: "Cádiz"
+
+diez: 
+ id: 10
+ user_id: 10
+ nombre: "Carlitos"
+ apellidos: "Coches"
+ sexo: "Hombre"
+ fecha_nacimiento: 1995-04-01
+ ciudad: "Zaragoza"
+
+once: 
+ id: 11
+ user_id: 11
+ nombre: "Elena"
+ apellidos: "Granada"
+ sexo: "Mujer"
+ fecha_nacimiento: 1999-04-01
+ ciudad: "Ciudad Real"
+
+

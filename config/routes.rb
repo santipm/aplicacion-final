@@ -13,4 +13,6 @@ CursoRails::Application.routes.draw do
   resources :users
   resources :perfil, :only =>[:index,:show,:update]
 
+  match "nombre/:nombre" =>"users#show"
+
 end
