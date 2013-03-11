@@ -12,12 +12,13 @@
   						<p>Ciudad: <%= ciudad_perfil(@user) %> </p>
   						<p>Sexo: <%= sexo_perfil(@user) %> </p>
   					</small>
-  				
+  				<%= render :partial=>"users/contacto", :locals =>{:destinatario=> @user.email,
+            :usuario =>@user} %>
   			</div>
   		</div>
   		<div class="row">
   			<div class="span4">
-
+        
   			</div>
 
   		</div>

@@ -27,8 +27,8 @@ CursoRails::Application.configure do
     domain: "gmail.com",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: "email",
-    password: "password"
+    user_name: "santi.jimmy",
+    password: "a13santi"
   }
 
 

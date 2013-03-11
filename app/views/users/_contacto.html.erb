@@ -1,0 +1,13 @@
+<h3>Mensaje</h3>
+
+<%= form_tag(:action=>"contacto", :id=>usuario) do %>
+	<%= hidden_field_tag "destinatario", destinatario %>
+
+	<%= label_tag "asunto", "Asunto" %>
+	<%= text_field_tag "asunto" %>
+
+	<%= label_tag "mensaje", "Mensaje" %>
+	<%= text_area_tag "mensaje",nil, :size => "40x3" %>
+	<p></p>
+	<%= submit_tag "Enviar" %>
+<% end %>
