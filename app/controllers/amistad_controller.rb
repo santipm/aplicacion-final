@@ -33,6 +33,12 @@ before_filter :authenticate_user!
 
  end
 
+def rechazar 
+  @usuario = User.find_by_name(params[:nombre])
+  Amigo.rechazar_amistad(@usuario,current_user)
+  Amigo.rechazar_amistad(current_user,@usuario)
 
+  redirect_to current_user
+end
 
 end
