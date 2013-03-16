@@ -12,5 +12,16 @@
     		</li>
     	</ul>
 	</div>
+    <!-- Mostrar Avatar del usuario -->
+    <div class="span3">             
+        <%= gravatar_image_tag(current_user.email, :alt => current_user.name,:class=>"thumbnail",:gravatar => { :size => 300 })  %> 
+    </div>
+    <div class="span3">
+    <!-- Listar los usuario -->
+        <%= render :partial=>"listado_amigos", :locals => {:usuario=> current_user} %>
+    </div>
+    
+
+
 </div>
   

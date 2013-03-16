@@ -1,4 +1,6 @@
 CursoRails::Application.routes.draw do
+  get "amistad/crear"
+
   get "perfil/index"
 
   get "perfil/show"
@@ -15,5 +17,7 @@ CursoRails::Application.routes.draw do
 
   match "nombre/:nombre" =>"users#show"
   match "contacto/:id" =>"users#contacto"
-
+  match "amistad/crear/:id" =>"amistad#crear"
+  match "amistades/aceptar/:nombre" =>"amistad#aceptar"
+  match "amistades/rechazar/:nombre" =>"amistad#rechazar"
 end

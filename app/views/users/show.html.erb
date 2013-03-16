@@ -5,7 +5,7 @@
   			<div class="span4">
   			<%= gravatar_image_tag(@user.email, :alt => @user.name,:class=>"thumbnail",:gravatar => { :size => 300 })  %>
   			</div>
-  			<div class="span5 ">
+  			<div class="span3 ">
   				<h3><%= nombre_perfil(@user) %></h3>
   				<p>
   					<small>
@@ -15,10 +15,20 @@
   				<%= render :partial=>"users/contacto", :locals =>{:destinatario=> @user.email,
             :usuario =>@user} %>
   			</div>
+          <div class="span3">
+          <%= render :partial=>"listado_amigos", :locals => {:usuario=> @user} %>
+        </div>
   		</div>
   		<div class="row">
   			<div class="span4">
-        
+        <!-- Comprobar si existe amistad, sino mostrar el enlace -->
+        <% if existe_amistad?(current_user,@user) %>
+        <%= link_to "Petición de amistad a #{@user.name}",
+        {:controller=>"amistad",
+         :action=>"crear",
+         :id=>@user},
+         :confirm => "¿Realmente quiere solicitar su amitad?" %>
+          <%end %>
   			</div>
 
   		</div>

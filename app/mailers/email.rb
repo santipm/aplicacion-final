@@ -14,4 +14,14 @@ class Email < ActionMailer::Base
    mail to: @destinatario,
         subject: "Curso Rails - #{@asunto}"
   end
+
+
+  def solicitar_amistad(usuario,amigo)
+    @usuario = usuario
+    @amigo = amigo
+
+    mail to: amigo.email,
+         subject: "Solicitud de amistad de #{amigo.name}"
+
+  end
 end

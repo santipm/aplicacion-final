@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130306210827) do
+ActiveRecord::Schema.define(:version => 20130314191927) do
+
+  create_table "amigos", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "amigo_id"
+    t.string   "estado"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "perfiles", :force => true do |t|
     t.integer  "user_id"

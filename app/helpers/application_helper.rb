@@ -1,4 +1,12 @@
 module ApplicationHelper
+	def existe_amistad?(usuario,amigo)
+		Amigo.existe_amistad?(usuario,amigo)
+	end
+
+	def tienes_amigos?(usuario)
+    	!usuario.amigo.empty?
+	end
+
 	def nombre_perfil(usuario)
 		if usuario.perfil 
 			usuario.perfil.nombre.capitalize

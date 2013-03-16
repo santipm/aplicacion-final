@@ -7,11 +7,11 @@ class UsersController < ApplicationController
   end
 
   def show
-  	if params[:id]
+    if params[:id]
     	@user = User.find(params[:id])
-	else
-		@user = User.find_by_name(params[:nombre])
-	end
+	  else
+		  @user = User.find_by_name(params[:nombre])
+	  end
   end
 
   def contacto

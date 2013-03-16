@@ -1,0 +1,20 @@
+ <% if tienes_amigos?(usuario) %>
+        <h3>Listado de Amigos</h3>
+        <% usuario.amigo.each  do |usuario| %>
+        
+         <% if (usuario.estado == "aceptado") %>
+           <p>
+           <div class="row">
+            <div class="span1"> 
+                <%=link_to gravatar_image_tag(usuario.amistad.email, :alt=>usuario.amistad.name),user_path(usuario.amistad)  %>
+            </div> 
+            <div class="span2">
+                <%= usuario.amistad.name %> 
+                <%= link_to "Ir perfil", user_path(usuario.amistad) %>
+            </div>  
+            
+            </div>
+        </p>
+        <% end %>
+        <% end %>
+<% end %>
